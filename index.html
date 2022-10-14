@@ -19,28 +19,31 @@
         <h2 class="texto-orientacao">Primeiro, seu prato</h2> 
         <div class="prato">       
             <div class="secao-itens">
-                <div class="item">
+                <div onclick="pratoUm()" class="opcaoUm item selecionado">
                     <div class="caixa-item">
                         <img src="./img/frango-parmegiana.jpeg">
                         <h3>Frango à parmeg.</h3>
                         <p class="item-descricao">Arroz, frango à parmegiana e batata frita</p>
                         <p class="item-valor">R$ 25,90</p>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div onclick="pratoDois()" class="opcaoDois item">
                     <div class="caixa-item">
                         <img src="./img/peixe-frito-com-legumes.jpg">
                         <h3>Peixe Frito</h3>
                         <p class="item-descricao">Peixe, batata frita e legumes</p>
                         <p class="item-valor">R$ 26,90</p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="item">
+                <div onclick="pratoTres()" class="opcaoTres item">
                     <div class="caixa-item">
                         <img src="./img/strogonoff-de-frango.jpeg">
                         <h3>Strogonoff de Fr.</h3>
                         <p class="item-descricao">Arroz, strogonoff de frango, batata palha e alface</p>
                         <p class="item-valor">R$ 19,90</p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -49,28 +52,31 @@
         <h2 class="texto-orientacao">Agora, sua bebida</h2>
         <div class="bebida">
             <div class="secao-itens">
-                <div class="item">
+                <div onclick="bebidaUm()" class="opcaoUm item">
                     <div class="caixa-item">
                         <img src="./img/coca-zero.jpg">
                         <h3>Coca Zero Açúcar</h3>
                         <p class="item-descricao">Coca-Cola zero 350ml</p>
-                        <p class="item-valor">R$ 6,90</p>
+                        <p class="item-valor">R$ 5,90</p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="item">
+                <div onclick="bebidaDois()" class="opcaoDois item">
                     <div class="caixa-item">
                         <img src="./img/coca.jpg">
                         <h3>Coca-Cola</h3>
                         <p class="item-descricao">Coca-Cola 350ml</p>
                         <p class="item-valor">R$ 6,90</p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="item">
+                <div onclick="bebidaTres()" class="opcaoTres item">
                     <div class="caixa-item">
                         <img src="./img/guarana.jpg">
                         <h3>Guaraná Antártica</h3>
                         <p class="item-descricao">Guaraná Antártica 350ml</p>
-                        <p class="item-valor">R$ 6,90</p>
+                        <p class="item-valor">R$ 4,90</p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -79,38 +85,42 @@
         <h2 class="texto-orientacao">Por fim, sua sobremesa</h2>
         <div class="sobremesa">
             <div class="secao-itens">
-                <div class="item">
+                <div onclick="sobremesaUm()" class="opcaoUm item">
                     <div class="caixa-item">
                         <img src="./img/pudim.jpg">
                         <h3>Pudim</h3>
                         <p class="item-descricao">Pudim de leite</p>
                         <p class="item-valor">R$ 20,90</p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="item">
+                <div onclick="sobremesaDois()" class="opcaoDois item">
                     <div class="caixa-item">
                         <img src="./img/brownie.jpg">
                         <h3>Brownie</h3>
                         <p class="item-descricao">Brownie</p>
                         <p class="item-valor">R$ 8,90</p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="item">
+                <div onclick="sobremesaTres()" class="opcaoTres item">
                     <div class="caixa-item">
                         <img src="./img/sorvete.jpg">
                         <h3>Sorvete</h3>
                         <p class="item-descricao">Sorvete</p>
                         <p class="item-valor">R$ 15,90</p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="aguardando-selecao">
-        <div>
-            <p>Selecione os 3 itens<br>para fechar o pedido</p>
-        </div>
+    <div class="fechar-pedido">
+        <button>Selecione os 3 itens<br>para fechar o pedido</button>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
 </html>

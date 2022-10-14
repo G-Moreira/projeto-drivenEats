@@ -27,6 +27,8 @@ body {
     width: 100vw;
     height: 92px;
     padding-left: 5%;
+
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
 
 .menu-topo h1 {
@@ -53,10 +55,12 @@ body {
 
 .secao-itens {
     display: flex;
+    align-items: center;
+
     margin-top: 17px;
-    
     width: 100%;
-    overflow: hidden;
+    overflow-x: scroll;
+    height: 225px;
 }
 
 .item {
@@ -67,6 +71,27 @@ body {
     margin-right: 16px;
     padding: 18px 14px;
     border-radius: 9px;
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.25);
+}
+
+.item ion-icon {
+    display: none;
+}
+
+.selecionado {
+    position: relative;
+    box-shadow: 0px 0px 0px 5px #32B72F inset;
+}
+
+.selecionado ion-icon {
+    display: inline;
+
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+
+    font-size: 1.1875rem;
+    color: #32B72F;
 }
 
 .caixa-item {
@@ -113,7 +138,7 @@ body {
     height: 197px;
 }
 
-.aguardando-selecao {
+.fechar-pedido {
     background-color: #FFFFFF;
 
     position: fixed;
@@ -127,9 +152,12 @@ body {
     height: 92px;
 }
 
-.aguardando-selecao div {
+.fechar-pedido button {
     background-color: #CBCBCB;
-    
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,11 +165,6 @@ body {
     width: 364px;
     height: 61px;
 
+    border: none;
     border-radius: 50px;
-}
-
-.aguardando-selecao div p {
-    color: #FFFFFF;
-    font-size: 1.25rem;
-    font-weight: 400;
 }
