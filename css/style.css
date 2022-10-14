@@ -168,3 +168,12 @@ body {
     border: none;
     border-radius: 50px;
 }
+
+.fechar-pedido button p{
+    width: 200px;
+}
+
+.habilitado button {
+    background-color: #32B72F;
+    font-weight: 700;
+}

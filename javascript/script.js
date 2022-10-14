@@ -134,3 +134,30 @@ function sobremesaTres() {
     }
 }
 
+function habilitarPedido() {
+    const pratoUmSelec = document.querySelector('.prato .opcaoUm');
+    const pratoDoisSelec = document.querySelector('.prato .opcaoDois');
+    const pratoTresSelec = document.querySelector('.prato .opcaoTres');
+
+    const bebidaUmSelec = document.querySelector('.bebida .opcaoUm');
+    const bebidaDoisSelec = document.querySelector('.bebida .opcaoDois');
+    const bebidaTresSelec = document.querySelector('.bebida .opcaoTres');
+
+    const sobremesaUmSelec = document.querySelector('.sobremesa .opcaoUm');
+    const sobremesaDoisSelec = document.querySelector('.sobremesa .opcaoDois');
+    const sobremesaTresSelec = document.querySelector('.sobremesa .opcaoTres');
+
+    const pratoEscolhido = (pratoUmSelec.classList.contains('selecionado') || pratoDoisSelec.classList.contains('selecionado') || pratoTresSelec.classList.contains('selecionado'));
+    const bebidaEscolhida = (bebidaUmSelec.classList.contains('selecionado') || bebidaDoisSelec.classList.contains('selecionado') || bebidaTresSelec.classList.contains('selecionado'));
+    const sobremesaEscolhida = (sobremesaUmSelec.classList.contains('selecionado') || sobremesaDoisSelec.classList.contains('selecionado') || sobremesaTresSelec.classList.contains('selecionado'));
+
+    const pedido = document.querySelector('.fechar-pedido');
+    const botaoTexto = document.querySelector ('.fechar-pedido button p');
+    if (pratoEscolhido && bebidaEscolhida && sobremesaEscolhida) {
+        pedido.classList.add('habilitado');
+        botaoTexto.innerHTML = "Fechar Pedido";
+    } else if (pedido.classList.contains('habilitado')){
+        pedido.classList.remove('habilitado');
+        botaoTexto.innerHTML = "Selecione os 3 itens para fechar o pedido";
+    }
+}
