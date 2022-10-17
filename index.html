@@ -19,7 +19,7 @@
         <h2 class="texto-orientacao">Primeiro, seu prato</h2> 
         <div class="prato">       
             <div class="secao-itens">
-                <div onclick="pratoUm();habilitarPedido()" class="opcaoUm item selecionado">
+                <div onclick="selecPrato(this);habilitarPedido()" class="opcaoUm item selecionado">
                     <div class="caixa-item">
                         <img src="./img/frango-parmegiana.jpeg">
                         <h3>Frango à parmeg.</h3>
@@ -28,7 +28,7 @@
                     </div>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div onclick="pratoDois();habilitarPedido()" class="opcaoDois item">
+                <div onclick="selecPrato(this);habilitarPedido()" class="opcaoDois item">
                     <div class="caixa-item">
                         <img src="./img/peixe-frito-com-legumes.jpg">
                         <h3>Peixe Frito</h3>
@@ -37,7 +37,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div onclick="pratoTres();habilitarPedido()" class="opcaoTres item">
+                <div onclick="selecPrato(this);habilitarPedido()" class="opcaoTres item">
                     <div class="caixa-item">
                         <img src="./img/strogonoff-de-frango.jpeg">
                         <h3>Strogonoff de Fr.</h3>
@@ -52,7 +52,7 @@
         <h2 class="texto-orientacao">Agora, sua bebida</h2>
         <div class="bebida">
             <div class="secao-itens">
-                <div onclick="bebidaUm();habilitarPedido()" class="opcaoUm item">
+                <div onclick="selecBebida(this);habilitarPedido()" class="opcaoUm item">
                     <div class="caixa-item">
                         <img src="./img/coca-zero.jpg">
                         <h3>Coca Zero Açúcar</h3>
@@ -61,7 +61,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div onclick="bebidaDois();habilitarPedido()" class="opcaoDois item">
+                <div onclick="selecBebida(this);habilitarPedido()" class="opcaoDois item">
                     <div class="caixa-item">
                         <img src="./img/coca.jpg">
                         <h3>Coca-Cola</h3>
@@ -70,7 +70,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div onclick="bebidaTres();habilitarPedido()" class="opcaoTres item">
+                <div onclick="selecBebida(this);habilitarPedido()" class="opcaoTres item">
                     <div class="caixa-item">
                         <img src="./img/guarana.jpg">
                         <h3>Guaraná Antártica</h3>
@@ -85,7 +85,7 @@
         <h2 class="texto-orientacao">Por fim, sua sobremesa</h2>
         <div class="sobremesa">
             <div class="secao-itens">
-                <div onclick="sobremesaUm();habilitarPedido()" class="opcaoUm item">
+                <div onclick="selecSobremesa(this);habilitarPedido()" class="opcaoUm item">
                     <div class="caixa-item">
                         <img src="./img/pudim.jpg">
                         <h3>Pudim</h3>
@@ -94,7 +94,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div onclick="sobremesaDois();habilitarPedido()" class="opcaoDois item">
+                <div onclick="selecSobremesa(this);habilitarPedido()" class="opcaoDois item">
                     <div class="caixa-item">
                         <img src="./img/brownie.jpg">
                         <h3>Brownie</h3>
@@ -103,7 +103,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div onclick="sobremesaTres();habilitarPedido()" class="opcaoTres item">
+                <div onclick="selecSobremesa(this);habilitarPedido()" class="opcaoTres item">
                     <div class="caixa-item">
                         <img src="./img/sorvete.jpg">
                         <h3>Sorvete</h3>
