@@ -2,17 +2,16 @@
 function selecPrato(prato) {  
     const retiraSelec = document.querySelector('.prato .selecionado');
     
-    if(retiraSelec !== null){
+    if(retiraSelec !== prato && retiraSelec !== null){
         retiraSelec.classList.remove('selecionado');
     }
-
     prato.classList.toggle('selecionado');
 }
 
 function selecBebida(bebida) {
     const retiraSelec = document.querySelector('.bebida .selecionado');
     
-    if(retiraSelec !== null){
+    if(retiraSelec !== bebida && retiraSelec !== null){
         retiraSelec.classList.remove('selecionado');
     }
 
@@ -22,7 +21,7 @@ function selecBebida(bebida) {
 function selecSobremesa(sobremesa) {
     const retiraSelec = document.querySelector('.sobremesa .selecionado');
 
-    if(retiraSelec !== null){
+    if(retiraSelec !== sobremesa && retiraSelec !== null){
         retiraSelec.classList.remove('selecionado');
     }
 
@@ -55,7 +54,7 @@ function habilitarPedido() {
         const valorSobremesa = document.querySelector('.sobremesa .selecionado .item-valor span');
         
         const total = Number( (valorPrato.innerHTML).replace(',','.') ) + Number( (valorBebida.innerHTML).replace(',','.') ) + Number( (valorSobremesa.innerHTML).replace(',','.') );
-        pedido.href="https://wa.me/5521988815425?text=" + 
+        pedido.href="https://wa.me/5521999999999?text=" + 
         encodeURIComponent(
             "Olá, gostaria de fazer o pedido:" + 
             "\n- Prato: " + nomeDoPrato.innerHTML +

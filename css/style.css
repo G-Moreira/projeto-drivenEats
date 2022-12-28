@@ -18,7 +18,7 @@ body {
 }
 
 .menu-topo{
-    background-color: #CF2B2B;
+    background-color: #4d068f;
     color: #FFFFFF;  
 
     display: flex;
@@ -66,6 +66,10 @@ body {
     width: 100%;
     overflow-x: scroll;
     height: 225px;
+}
+
+.secao-itens::-webkit-scrollbar {
+    display: none;
 }
 
 .item {
